@@ -26,7 +26,6 @@ class Router{
         if(array_key_exists($uri, $this->routes)){
             return $this->routes[$uri];
         }
-
-        throw new Exception('No se ha encontrado la pagina que estas buscando');
+        die('No se ha encontrado la pagina que buscas');
     }
 }
